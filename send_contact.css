@@ -1,0 +1,71 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page center */
+body {
+    background: #0f172a7a; /* Dark navy background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #e2e8f0;
+}
+
+/* Response box */
+.response-box {
+    background: #1e293b;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    text-align: center;
+    width: 480px;
+    animation: fadeIn 0.6s ease-in-out;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Success message */
+.response-box h2 {
+    color: #eeff00;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(255, 251, 0, 0.8);
+}
+
+/* Error message */
+.response-box .error {
+    color: #ef4444;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(239,68,68,0.8);
+}
+
+/* Back button */
+.response-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #fffb01, #e6f704);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+.response-box a:hover {
+    background: linear-gradient(135deg, #06b6d4, #fffb00);
+    transform: scale(1.07);
+    box-shadow: 0 0 15px rgba(59,130,246,0.7);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
